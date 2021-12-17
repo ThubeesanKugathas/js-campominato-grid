@@ -1,0 +1,29 @@
+.ms_box-container {
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.ms_box-1 {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 2px solid #000;
+}
+
+.ms_box-2 {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    border: 2px solid #000;
+}
+
+.ms_box-3 {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    border: 2px solid #000;
+}
+
+.ms_box-1.ms_color,
+.ms_box-2.ms_color,
+.ms_box-3.ms_color {
+    background-color: cyan;
+}
