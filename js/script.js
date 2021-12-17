@@ -16,6 +16,7 @@ function boxNumber(max){
     }
 }
 
+
 // definisco l'output del div container
 let containerHtml = document.querySelector('.ms_box-container');
 
@@ -23,22 +24,33 @@ let containerHtml = document.querySelector('.ms_box-container');
 const button1 = document.getElementById('ms_button1');
 const button2 = document.getElementById('ms_button2');
 const button3 = document.getElementById('ms_button3');
+const button4 = document.getElementById('ms_button4');
+
+
 
 // button per definire griglia 10x10
 button1.addEventListener('click', function () {
     boxNumber(100);
+    containerHtml.classList.remove('ms_container-2');
+    containerHtml.classList.remove('ms_container-3');
     containerHtml.classList.add('ms_container-1');
 })
 
 // button per definire griglia 9x9
 button2.addEventListener('click', function () {
     boxNumber(81);
+    containerHtml.classList.remove('ms_container-1');
+    containerHtml.classList.remove('ms_container-3');
     containerHtml.classList.add('ms_container-2');
 })
 
 // button per definire griglia 7x7
 button3.addEventListener('click', function () {
     boxNumber(49);
+    containerHtml.classList.remove('ms_container-1');
+    containerHtml.classList.remove('ms_container-2');
     containerHtml.classList.add('ms_container-3');
 })
+
+
 
