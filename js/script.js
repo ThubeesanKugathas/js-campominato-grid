@@ -24,9 +24,6 @@ let containerHtml = document.querySelector('.ms_box-container');
 const button1 = document.getElementById('ms_button1');
 const button2 = document.getElementById('ms_button2');
 const button3 = document.getElementById('ms_button3');
-const button4 = document.getElementById('ms_button4');
-
-
 
 // button per definire griglia 10x10
 button1.addEventListener('click', function () {
